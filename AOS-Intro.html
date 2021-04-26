@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS</title>
+    <link rel="stylesheet" href="AOS-intro-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <section><h1>AOS Animation on scroll</h1></section>
+    <div class="box1" data-aos="fade-up" data-aos-anchor-placement="top-center"><h1>"fade-up"</h1></div>
+    <div class="box2" data-aos="flip-down" ><h1>flip down</h1></div>
+    <div class="box3" data-aos="zoom-in"><h1>zoom-in</h1></div>
+    <div class="box4" data-aos="fade-right"><h1>fade-right</h1></div>
+    <div class="box5" data-aos="flip-left"><h1>flip-left</h1></div>
+    <div class="box6" data-aos="rotate-ac"><h1>Rotate </h1></div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init({offset: 200,duration: 1000,easing:'ease-in-quad',delay:100,});
+    AOS.init ({disable: 'mobile'});
+    AOS.init ({disable: function() {var maxWidth = 800;return window.innerWidth < maxWidth;}});  
+    </script>
+</body>
+</html>

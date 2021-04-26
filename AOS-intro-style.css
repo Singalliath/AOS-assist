@@ -1,0 +1,29 @@
+section:first-of-type{
+    height:100vh;
+    text-align:center;
+    background-color:rgba(232,247,255,1.00);
+    text-align:center;
+}
+[class^=box]{width:400px;
+    height:150px;
+    border:1px solid;
+    margin:80px auto;
+    text-align:center;
+}
+
+.box1{background:rgba(241,151,152,1.00);
+}
+.box2{background:rgba(151,180,219,1.00);
+}
+.box3 {background:rgba(77,201,180,1.00);
+}
+.box4 {background:rgba(248,223,116,1.00);
+}
+.box5 {background: rgba(210,116,240,1.00);
+}
+.box6 {background: rgba(270, 34,53, 1)
+}
+[data-aos="rotate-ac"] {transform: rotate(-180deg);transition-property: transform;
+}
+[data-aos="rotate-ac"].aos-animate {  transform: rotate(0deg);
+}
